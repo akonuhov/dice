@@ -124,10 +124,10 @@ export default {
   },
   methods: {
     onChangeNumber () {
-      this.chanceHi = Math.round((100 - this.formDice.number) * 10) / 10
+      this.chanceHi = Math.round((100 - this.formDice.number) * 100) / 100
       this.chanceLo = this.formDice.number
-      this.payoutHi = Math.round((100 / this.chanceHi) * 10) / 10
-      this.payoutLo = Math.round((100 / this.chanceLo) * 10) / 10
+      this.payoutHi = Math.round((100 / this.chanceHi) * 100) / 100
+      this.payoutLo = Math.round((100 / this.chanceLo) * 100) / 100
     },
     onClickFreeCredits () {
       this.balance = 100
