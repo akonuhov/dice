@@ -5,10 +5,10 @@
         <el-col :span="8">
           <el-form ref="formDice" :model="formDice" label-position="top">
             <el-form-item label="Bet Amount">
-              <el-input-number v-model="formDice.betAmount" :precision="2" :min="0.1" @change="onChangeBetAmount"></el-input-number>
+              <el-input-number v-model="formDice.betAmount" :precision="2" :min="0.1"></el-input-number>
             </el-form-item>
             <el-form-item label="Number">
-              <el-input-number v-model="formDice.number" :min="1" :max="99"></el-input-number>
+              <el-input-number v-model="formDice.number" :min="1" :max="99" @change="onChangeNumber"></el-input-number>
             </el-form-item>
             <el-row :gutter="20">
               <el-col :span="12">
